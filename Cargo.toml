@@ -1,0 +1,22 @@
+[package]
+name = "minkowski_kv"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+bincode = "1"
+blake3 = "1"
+uuid = { version = "1", features = ["v4", "serde"] }
+petgraph = "0.6"
+dashmap = "5"
+thiserror = "1"
+ratatui = "0.29"
+crossterm = { version = "0.28", features = ["event-stream"] }
+anyhow = "1"
+tui-logger = "0.11"
+futures = "0.3"
+quinn = { version = "0.11", features = ["ring"] }
+rustls = { version = "0.23", features = ["ring"] }
+rcgen = "0.13"
